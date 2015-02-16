@@ -2,13 +2,22 @@
   section {
     height: auto;
     &.hero {
-      height: 650px;
+      // height: 600px;
     }    
   }
 }
 
 @media screen and (min-width: 768px) {
 	section{
+		&.hero{
+			h1{
+			  margin: 60px 0 0;
+			  font-size: 42px;
+			}
+			.lead{
+				font-size: 16px;
+			}
+		}
 		&.guests{
 			li, .guest{
 				&.swiss{
@@ -18,14 +27,19 @@
 		}	
 	}
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 980px) {
   section {
   	&.hero{
   		h1{
-  		  margin: 70px 0 0;
+  		  font-size: 52px;
+  		}
+  		.lead{
+  			font-size: 18px;
   		}
   	}
     &.process {
+    	height: 450px;
+
 	  	.koazee-container{
 	  	  min-height: 400px;
 	  	}

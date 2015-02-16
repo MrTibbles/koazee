@@ -43,34 +43,41 @@
       </div>
       <div class="sign-up col-xs-12">
         <div class="koazee-container">
-          <p class="text-center uppercase">Enter your details below - We'll email you when you get a match</p>
-          <form class="">
+          <p class="col-xs-12 text-center uppercase form-title">Enter your details below - We'll email you when you get a match</p>
+          <form class="" action="sign-up-process.php" method="POST">
             <div class="col-xs-8 col-md-4">
               <input type="text" class="" placeholder="Email">
             </div>
             <div class="col-xs-4 col-md-4 offset1 group-size">
               <select class="col-xs-">
-                <option value="" disabled selected>No.</option>
-                <option value="1">1</option>
+                <option value="" disabled selected>No. in Group</option>
+                <option value="1">Just me</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
+                <option value="5">6</option>
+                <option value="5">7</option>
+                <option value="5">8</option>
+                <option value="5">9</option>
+                <option value="5">10</option>
               </select>
             </div>
             <div class="col-xs-12 col-md-4">
               <select>
-                <option value="" disabled selected>Select Destination</option>
-                <option value="french-alps">French Alps</option>
-                <option value="italian-alps">Italian Alps</option>
-                <option value="swiss-alps">Swiss Alps</option>
+                <option value="" disabled selected>Your Destination</option>
+                <option value="morzine">Morzine</option>
+                <option value="val_t">Val Thoren</option>
+                <option value="meribel">Méribel</option>
+                <option value="tignes">Tignes</option>
+                <option value="val_d">Val d'Isère</option>
               </select>
             </div>
 <!--             <div class="col-xs-6 col-md-4">
               <input class="datepicker" value="" placeholder="DD/MM/YYYY" type="text">
             </div> -->
             <div class="col-xs-12 col-md-8">
-              <input id="select-date" class="datepicker date" value="" placeholder="DD/MM/YYYY" type="text">
+              <input id="select-date" class="datepicker date" value="" placeholder="Week of your Stay" type="text" readonly>
             </div>
             <div class="col-xs-12 col-md-4">
               <button type="submit" class="btn btn-blue">Submit</button>
@@ -126,7 +133,6 @@
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>

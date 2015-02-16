@@ -1,10 +1,10 @@
 section {
   position: relative;
-  height: 100vh;
 
   &.hero {
-    padding: 40px 0 0;    
+    padding: 75px 0 0;    
     min-height: 450px;
+    height: 600px;
     color: #ffffff;
     background: {
       image: url('../../images/main-hero-home.jpg');
@@ -13,10 +13,13 @@ section {
       size: cover;
     }  
     h1{
-      margin-top: 40px;
+      margin-top: 5px;
+      text-transform: none;
+      font-size: 32px;
     }  
     .lead{
       opacity: 0.8;
+      font-size: 13px;
     }
     .sign-up {
       position: absolute;
@@ -25,6 +28,11 @@ section {
       background-color: rgba(0, 0, 0, 0.6);
       padding-top: 25px;
       padding-bottom: 25px;
+
+      .form-title{
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
     }
 
     #select-date{
@@ -34,6 +42,7 @@ section {
 
   &.process{
   	padding: 40px 0;    
+    height: 540px;
 
   	ul{
   		height: 100%;
@@ -41,6 +50,7 @@ section {
   	li{      
   		height: 33%;
   		padding-top: 110px;
+      margin-bottom: 60px;
   		background: {
   			position: center 0;
   			repeat: no-repeat;
