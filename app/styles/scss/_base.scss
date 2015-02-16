@@ -1,0 +1,83 @@
+$blue: #3b92f3;
+$border: #f0f1f2;
+$open-sans: 'open_sansregular';
+$open-sans-bold: 'open_sansbold';
+$open-sans-light: 'open_sanslight';
+
+
+body, html{ 
+  font-family: $open-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: $open-sans-bold;
+    // color: $title-colour;
+  }
+
+  p, span, b, i, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, div{
+    font-family: $open-sans;    
+    // color: $body-txt;
+    // line-height: 24px;
+    // font-size: 16px;
+  } 
+}
+
+.clear{
+	clear: both;
+}
+
+ul{
+	list-style: none;
+}
+input, select, button, .input-styles {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  padding: 10px 15px;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.2);
+  @include add-prefix(appearance, none);
+  @include border-radius(4px);
+}
+select{
+  background: {
+    image: url('../../images/icons/down-arrow-wide.svg');
+    repeat:  no-repeat;
+    position: right center;
+    size: 30px 10px;
+  }
+}
+.sign-up ::-webkit-input-placeholder, .sign-up :-moz-placeholder, .sign-up ::-moz-placeholder, .sign-up :-ms-input-placeholder {
+  color: #ffffff;
+}
+button {
+  position: relative;  
+
+  &:after {
+    width: 30px;
+    height: 10px;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: {
+      image: url('../../images/icons/side-arrow-wide.svg');
+      repeat:  no-repeat;
+      position: right center;
+      size: 30px 10px;
+    }
+  }
+  &.btn-blue {
+    background-color: $blue;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 15px 9px;
+  }
+}
+
+.koazee-container{
+  max-width: 950px;
+  margin: 0 auto;
+}

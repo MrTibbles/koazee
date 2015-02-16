@@ -1,0 +1,81 @@
+@media screen and (max-height: 680px) {
+  section {
+    height: auto;
+    &.hero {
+      height: 650px;
+    }    
+  }
+}
+
+@media screen and (min-width: 768px) {
+	section{
+		&.guests{
+			li, .guest{
+				&.swiss{
+					background-size: 100% auto;
+				}
+			}			
+		}	
+	}
+}
+@media screen and (min-width: 992px) {
+  section {
+  	&.hero{
+  		h1{
+  		  margin: 70px 0 0;
+  		}
+  	}
+    &.process {
+	  	.koazee-container{
+	  	  min-height: 400px;
+	  	}
+	    ul{
+	    	padding-top: 115px;
+	    	padding-bottom: 125px;
+	    }      
+
+      li{
+      	max-width: 220px;
+      	padding-left: 0;
+      	padding-right: 0;
+      	position: relative;
+
+      	&.match{
+      		margin: 0 125px;
+
+      		&:before, &:after{
+      			display: block;
+      			width: 70px;
+      			height: 100%;
+      			content: '';
+      			top: 0;
+      			position: absolute;
+      			@include add-prefix(transform, rotate(-90deg));
+
+      			background: {
+      				image: url('../../images/icons/long-arrow.svg');
+      				position: center;
+      				repeat: no-repeat;
+      				size: 280px 90px;
+      			}
+      		}
+      		&:before{
+      			left: -70px;
+      		}
+      		&:after{
+      			right: -70px;
+      		}
+      	}
+      }
+    }    
+  }
+
+  footer{
+  	p{
+  		float: left;
+  	}
+  	a{
+  		float: right;  		
+  	}
+  }
+}
