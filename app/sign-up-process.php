@@ -1,20 +1,16 @@
 <?php
 	
-	require("db_connect.php"); 
-	$email = 'fgdgfg';//$_POST['email']; 
-	$group = 'fgdgfg';//$_POST['group'];
-	$destination = 'fgdgfg';//$_POST['destination'];
-	$date = 'fgdgfg';//$_POST['date'];
+	// require("db_connect.php"); 
+	// $email = 'fgdgfg';//$_POST['email']; 
+	// $group = 'fgdgfg';//$_POST['group'];
+	// $destination = 'fgdgfg';//$_POST['destination'];
+	// $dates = 'fgdgfg';//$_POST['date'];
 
-	$sql = "INSERT INTO enquiries (email, group, destination, date) VALUES ('$email', '$group', '$destination', '$date')";
+	//Connecting to sql db.
+	$connect = mysqli_connect("mysql-55.int.mythic-beasts.com'","vaughnmck","ecohraep","vaughnmck");
 
-	if (!mysql_query($sql, $connect)) { // if the query cannot run with the connection info provided
-		die("error: " . mysql_error());	 // DIE
-	} 
-	$result = "sent";
+	//Sending form data to sql db.
+	mysqli_query($connect,"INSERT INTO enquiries (email, group, destination, dates)
+	VALUES ('$_POST[post_email]', '$_POST[post_group]', '$_POST[post_destination]', '$_POST[post_dates]')";
 
-	if ($result == "sent") {
-		echo 'stored_enquiry';
-	}else {
-		echo 'error';
-	}
+	?>
