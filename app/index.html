@@ -44,13 +44,13 @@
       <div class="sign-up col-xs-12">
         <div class="koazee-container">
           <p class="col-xs-12 text-center uppercase form-title">Enter your details below - We'll email you when you get a match</p>
-          <form class="" action="sign-up-process.php" method="POST">
-            <div class="col-xs-8 col-md-4">
-              <input type="text" class="" placeholder="Email">
+          <form class="" action="db_connect.php" method="POST">
+            <div class="col-xs-12 col-sm-4">
+              <input type="text" class="" name="email" placeholder="EMAIL">
             </div>
-            <div class="col-xs-4 col-md-4 offset1 group-size">
-              <select class="col-xs-">
-                <option value="" disabled selected>No. in Group</option>
+            <div class="col-xs-12 col-sm-4 offset1 group-size">
+              <select class="col-xs-" name="group_size">
+                <option value="" disabled selected>NO. IN GROUP</option>
                 <option value="1">Just me</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -63,9 +63,9 @@
                 <option value="5">10</option>
               </select>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <select>
-                <option value="" disabled selected>Your Destination</option>
+            <div class="col-xs-12 col-sm-4">
+              <select name="destination">
+                <option value="" disabled selected>YOUR DESTINATION</option>
                 <option value="morzine">Morzine</option>
                 <option value="val_t">Val Thoren</option>
                 <option value="meribel">Méribel</option>
@@ -73,14 +73,14 @@
                 <option value="val_d">Val d'Isère</option>
               </select>
             </div>
-<!--             <div class="col-xs-6 col-md-4">
+<!--             <div class="col-xs-6 col-sm-4">
               <input class="datepicker" value="" placeholder="DD/MM/YYYY" type="text">
             </div> -->
-            <div class="col-xs-12 col-md-8">
-              <input id="select-date" class="datepicker date" value="" placeholder="Week of your Stay" type="text" readonly>
+            <div class="col-xs-12 col-sm-8">
+              <input id="select-date" class="datepicker date" value="" name="dates" placeholder="WEEK OF YOUR STAY" type="text" readonly>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <button type="submit" class="btn btn-blue">Submit</button>
+            <div class="col-xs-12 col-sm-4">
+              <button type="submit" class="btn btn-blue">SUBMIT</button>
             </div>
           </form>
         </div>
@@ -104,7 +104,7 @@
     </section>
     <section class="guests">      
       <div class="koazee-container">        
-        <p class="col-xs-12 text-center uppercase koazee-title"><span>WHERE GUESTS ARE STAYING</span></p>
+        <p class="col-xs-12 text-center uppercase koazee-title"><span>WHERE YOU SHOULD BE STAYING</span></p>
         <ul class="col-xs-12">
           <li class="col-xs-12 guest french col-md-4">
             <h3 class="text-center uppercase">France</h3>
@@ -112,7 +112,7 @@
           <li class="col-xs-12 guest austrian col-md-4">
             <h3 class="text-center uppercase">Austria</h3>
           </li>
-          <li class="col-xs-12 guest austrian col-md-4 hidden-sm hidden-xs">
+          <li class="col-xs-12 guest italian col-md-4 hidden-sm hidden-xs">
             <h3 class="text-center uppercase">Italy</h3>
           </li>
         </ul>
@@ -125,7 +125,7 @@
   </main>
   <footer>
     <div class="koazee-container">
-      <a href="#" class="text-center twitter-icon"></a>
+      <a href="https://www.twitter.com/koazeeup" class="text-center twitter-icon"></a>
       <p class="copyright">kozee copyright &copy; 2015</p>      
       <br class="clear" />
     </div>

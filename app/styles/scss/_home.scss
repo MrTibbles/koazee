@@ -19,14 +19,17 @@ section {
     }  
     .lead{
       opacity: 0.8;
-      font-size: 13px;
+      font: {
+        family: $open-sans-bold;
+        size: 13px;
+      }
     }
     .sign-up {
       position: absolute;
       bottom: 0;
       background-color: rgb(0, 0, 0);
       background-color: rgba(0, 0, 0, 0.6);
-      padding-top: 25px;
+      padding-top: 15px;
       padding-bottom: 25px;
 
       .form-title{
@@ -58,7 +61,7 @@ section {
   		}
 
   		&.who{
-  			background-image: url('../../images/icons/question-circle.svg');
+  			background-image: url('../../images/icons/question-circle.png');
   		}
   		&.match{        
   			background-image: url('../../images/icons/group-circle.svg');
@@ -76,6 +79,10 @@ section {
 
   &.guests{
   	height: auto;
+
+    ul{
+      padding: 0;
+    }
 
   	p{
   		margin: 32px 0;
@@ -107,21 +114,25 @@ section {
   		padding-top: 110px;
   		margin-bottom: 30px;
   		background: {
-  			position: center 0;
-  			repeat: no-repeat;  			
+  			position: center;
+  			repeat: no-repeat; 
+        size: 280px auto; 			
   		}
 
   		&.french{
-  			background-image: url('../../images/french.jpg');
+  			background-image: url('../../images/chalet-tall-1.jpg');
   		}
   		&.austrian{
-  			background-image: url('../../images/austrian.jpg');
+        background-image: url('../../images/chalet-tall-3.jpg');
+      }
+      &.italian{
+  			background-image: url('../../images/chalet-tall-2.jpg');
   		}
   		&.swiss{
   			width: 100%;
   			padding: 110px 0 0;
   			margin-bottom: 0;
-  			background-image: url('../../images/swiss-lrg.jpg');
+  			background-image: url('../../images/chalet-wide-1.jpg');
   			background-size: 200% auto;
   		}
 
