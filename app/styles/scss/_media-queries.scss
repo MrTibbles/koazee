@@ -46,6 +46,7 @@
 	    ul{
 	    	padding-top: 90px;
 	    	padding-bottom: 20px;
+        border: none;
 	    }      
 
       li{
@@ -81,7 +82,27 @@
       		}
       	}
       }
-    }    
+    }  
+    .koazee-title{
+      position: relative;
+      span{
+        &:before, &:after{
+          display: block;
+          height: 2px;
+          width: 33%;
+          content: '';
+          background-color: #E6E6E5;
+          position: absolute;
+          top: 8px;
+        }
+        &:before{
+          left: 18px;
+        }
+        &:after{
+          right: 18px;
+        }
+      }
+    }  
   }
 
   footer{
