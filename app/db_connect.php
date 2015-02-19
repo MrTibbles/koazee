@@ -24,7 +24,7 @@ VALUES ('$email', '$group_size', '$destination', '$dates')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
-    header("Location: http://www.koazee.co");
+    header("Location: http://www.koazee.co/thanks.html");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     header("Location: http://www.koazee.co");

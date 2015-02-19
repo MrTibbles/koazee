@@ -1,92 +1,86 @@
 @media screen and (max-height: 680px) {
   section {
     height: auto;
-    &.hero {
+    &.home-hero {
       // height: 600px;
-    }    
+    }
   }
 }
-
 @media screen and (min-width: 768px) {
-	section{
-		&.hero{
-			h1{
-			  margin: 60px 0 0;
-			  font-size: 42px;
-			}
-			.lead{
-				font-size: 16px;
-			}
-		}
-		&.guests{
-			li, .guest{
-				&.swiss{
-					background-size: 100% auto;
-				}
-			}			
-		}	
-	}
+  section {
+    &.home-hero {
+      h1 {
+        margin: 60px 0 0;
+        font-size: 42px;
+      }
+      .lead {
+        font-size: 16px;
+      }
+    }
+    &.guests {
+      li, .guest {
+        &.swiss {
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 980px) {
   section {
-  	&.hero{
-  		h1{
-  		  font-size: 52px;
-  		}
-  		.lead{
-  			font-size: 18px;
-  		}
-  	}
-    &.process {
-    	height: 360px;
-
-	  	.koazee-container{
-	  	  min-height: 360px;
-	  	}
-	    ul{
-	    	padding-top: 90px;
-	    	padding-bottom: 20px;
-        border: none;
-	    }      
-
-      li{
-      	max-width: 220px;
-      	padding-left: 0;
-      	padding-right: 0;
-      	position: relative;
-
-      	&.match{
-      		margin: 0 125px;
-
-      		&:before, &:after{
-      			display: block;
-      			width: 70px;
-      			height: 100%;
-      			content: '';
-      			top: 0;
-      			position: absolute;
-      			@include add-prefix(transform, rotate(-90deg));
-
-      			background: {
-      				image: url('../../images/icons/long-arrow.svg');
-      				position: center;
-      				repeat: no-repeat;
-      				size: 280px 90px;
-      			}
-      		}
-      		&:before{
-      			left: -70px;
-      		}
-      		&:after{
-      			right: -70px;
-      		}
-      	}
+    &.home-hero {
+      h1 {
+        font-size: 52px;
       }
-    }  
-    .koazee-title{
+      .lead {
+        font-size: 18px;
+      }
+    }
+    &.process {
+      height: 360px;
+      .koazee-container {
+        min-height: 360px;
+      }
+      ul {
+        padding-top: 90px;
+        padding-bottom: 20px;
+        border: none;
+      }
+      li {
+        max-width: 220px;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        &.match {
+          margin: 0 125px;
+          &:before, &:after {
+            display: block;
+            width: 70px;
+            height: 100%;
+            content: '';
+            top: 0;
+            position: absolute;
+            @include add-prefix(transform, rotate(-90deg));
+            background: {
+              image: url('../../images/icons/long-arrow.svg');
+              position: center;
+              repeat: no-repeat;
+              size: 280px 90px;
+            }
+          }
+          &:before {
+            left: -70px;
+          }
+          &:after {
+            right: -70px;
+          }
+        }
+      }
+    }
+    .koazee-title {
       position: relative;
-      span{
-        &:before, &:after{
+      span {
+        &:before, &:after {
           display: block;
           height: 2px;
           width: 33%;
@@ -95,22 +89,72 @@
           position: absolute;
           top: 8px;
         }
-        &:before{
+        &:before {
           left: 18px;
         }
-        &:after{
+        &:after {
           right: 18px;
         }
       }
-    }  
-  }
+    }
+    &.thanks-blurb{
+      padding-top: 145px;
+      padding-bottom: 0;
+      text-align: left;
 
-  footer{
-  	p{
-  		float: left;
-  	}
-  	a{
-  		float: right;  		
-  	}
+      .sub-title{
+        font-size: 16px;
+        opacity: 0.5;
+        line-height: 24px;
+      }   
+
+      .cheers-for{
+        margin-top: 40px;
+      }
+
+      p.first-line{
+        padding: 0 15px 0 0;
+      }   
+
+      .social-wrap{
+        width: auto;
+        text-align: left;
+
+        a{
+          margin-right: 15px;
+        }
+      }
+
+      .share-phone{
+        float: right;
+        width: 340px;
+        height: 525px;
+        background: url('../../images/share-phone-bg.jpg') no-repeat right bottom;
+        padding-top: 245px;
+        text-align: center;
+
+        p{
+          padding-top: 45px;
+          color: #000;
+          background: {
+            image: url('../../images/koazee-mtn-sml-logo.png');
+            repeat: no-repeat;
+            position: center 0;
+            color: transparent;
+          }
+          span{
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    p {
+      float: left;
+    }
+    a {
+      float: right;
+    }
   }
 }

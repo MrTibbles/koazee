@@ -1,0 +1,53 @@
+section{
+	&.thanks-blurb{
+		text-align: center;
+		padding-bottom: 30px;
+		border: {
+			style: solid;
+			width: 0 0 1px;
+			color: $blue;
+		}
+
+		.sub-title{
+			opacity: 0.5;
+		}
+		.share-link, .copy-clipboard{
+		  @include border-radius(5px);  
+		  margin-bottom: 15px;
+		}
+
+		.share-title{
+		  font-size: 12px;
+		  font-family: $open-sans-bold;     
+		}
+
+		.share-link{
+		  display: block;
+		  padding: 15px;
+		  background-color: #fcfcfc;
+		  border: 2px solid #e6e6e6;
+		  color: #a1a1a1;		  
+		}
+		.copy-clipboard{
+		  display: block;
+		  background-color: #e9f3fe;
+		  padding: 15px;
+		  border: 2px solid $blue;
+		  text-transform: uppercase;
+		  color: $blue;
+		  &:after{
+		    display: none;
+		  }
+		}
+
+		.social-wrap{
+			width: 50px;
+			margin: 0 auto;
+			margin-top: 30px;			
+
+			a{
+				float: left;
+			}
+		}
+	}
+}

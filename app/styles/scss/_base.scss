@@ -79,5 +79,18 @@ button {
 
 .koazee-container{
   max-width: 950px;
+  padding: 0;
   margin: 0 auto;
+}
+
+.bold{
+  font-family: $open-sans-bold;
+}
+
+.dark-title{
+  color: #000000;
+}
+
+.blue{
+  color: $blue;
 }

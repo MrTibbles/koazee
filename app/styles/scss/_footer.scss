@@ -1,33 +1,45 @@
 footer{
-	p{
-		opacity: 0.5;
-		color: #000000;
-		text-align: center;
-	}
 	padding: 30px 0; 
-	a{
-		display: block;		
-		width: 24px;
-		margin: 0 auto;		
+
+	a, p{
 		opacity: 0.5;
-		color: #000000;
-		padding-top: 20px;
-		background: {			
-			repeat: no-repeat;
-			position: center 0;
-			size: 24px 20px;
-		}
+	}
+}
+footer p{
+	opacity: 0.5;
+	color: #000000;
+	text-align: center;
+}	
+.social{
+	display: block;		
+	width: 25px;
+	margin: 0 auto;	
+	color: #000000;
+	padding-top: 20px;
+	background: {			
+		repeat: no-repeat;
+		position: center 0;
+		size: 24px 20px;
+	}
 
-		&.twitter-icon{
-			background-image: url('../../images/icons/twitter-icon.svg');
-		}
-		&.facebook-icon{
-			background-image: url('../../images/icons/facebook-icon.svg');
-			background-size: 16px 16px;
-		}
+	&.twitter-icon{
+		background-image: url('../../images/icons/twitter-icon.svg');
 
-		&:hover{
-			opacity: 1;
+		&.blue{
+			background-image: url('../../images/icons/twitter-icon-blue.svg');			
 		}
+	}
+	&.facebook-icon{
+		background-image: url('../../images/icons/facebook-icon.svg');
+		background-size: 16px 16px;
+
+		&.blue{
+			background-image: url('../../images/icons/facebook-icon-blue.svg');			
+			background-size: 24px 20px;
+		}
+	}
+
+	&:hover{
+		opacity: 1;
 	}
 }
