@@ -32,8 +32,8 @@ $dates_return = $_POST["dates_return"];
 // }
 
 // /VALUES ($_POST[email], $_POST[group_size], $_POST[destination], $_POST[dates])";
-$sql = "INSERT INTO enquiries (user_email, group_size, hol_destination, desired_dates)
-VALUES ('$email', '$group_size', '$destination', '$dates')";
+$sql = "INSERT INTO enquiries (user_email, group_size, hol_destination, date_depart, date_return)
+VALUES ('$email', '$group_size', '$destination', '$dates_depart', '$dates_return')";
 
 
 if (mysqli_query($conn, $sql)) {
