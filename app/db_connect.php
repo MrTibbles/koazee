@@ -73,7 +73,7 @@ $MailChimp = new \Drewm\MailChimp($mail_chimp_api);
 $result = $MailChimp->call('lists/subscribe', array(
                 'id'                => '6dc58e68fd',
                 'email'             => array('email'=>$email),
-                'merge_vars'        => array('EMAIL' => $email, 'GROUP' => $group_size, 'DEST' => $destination, 'DATE_D' => $dates_depart, 'DATE_D' => $dates_return),
+                'merge_vars'        => array('EMAIL' => $email, 'GROUP' => $group_size, 'DEST' => $destination, 'MERGE3' => $dates_depart, 'MERGE4' => $dates_return),
                 'double_optin'      => false,
                 'update_existing'   => true,
                 'replace_interests' => false,
