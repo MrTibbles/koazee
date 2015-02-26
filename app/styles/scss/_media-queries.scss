@@ -9,6 +9,7 @@
 @media screen and (min-width: 768px) {
   section {
     &.home-hero {
+    	height: 520px;
       h1 {
         margin: 60px 0 0;
         font-size: 42px;
@@ -29,6 +30,8 @@
 @media screen and (min-width: 980px) {
   section {
     &.home-hero {
+    	// height: 660px;
+
       h1 {
         font-size: 52px;
       }
@@ -42,12 +45,12 @@
         min-height: 360px;
       }
       ul {
-        padding-top: 90px;
+        padding-top: 20px;
         padding-bottom: 20px;
         border: none;
       }
       li {
-        max-width: 220px;
+        max-width: 260px;
         padding-left: 0;
         padding-right: 0;
         position: relative;
